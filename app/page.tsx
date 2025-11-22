@@ -85,6 +85,7 @@ export default function Page() {
       alert('Error sending alert');
     } finally {
       setSending(false);
+      alert('Alert sent successfully!');
     }
   }
 
@@ -93,9 +94,6 @@ export default function Page() {
     setFile(selectedFile);
   }
 
-  // -------------------------------
-  // UI
-  // -------------------------------
   return (
     <div className="mx-auto max-w-3xl p-6 font-sans">
       <h1 className="text-2xl font-semibold mb-4">AI Document Orchestrator</h1>
